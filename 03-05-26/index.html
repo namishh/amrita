@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Commerce</title>
+    <style>
+        * {
+            padding: 0;
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-areas:
+                "header header"
+                "sale sale"
+                "sidebar products"
+                "footer footer";
+        }
+
+        .sidebar {
+            background-color: #a81d32;
+            grid-area: sidebar;
+            display: flex;
+            flex-direction: column;
+            padding: 6px;
+        }
+
+        .sidebar-header {
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-header h3 {
+            font-weight: semibold;
+        }
+
+        .sidebar-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .sidebar-content a {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: normal;
+        }
+
+        .products {
+            grid-area: products;
+        }
+
+        .products iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            color: #ffffff;
+            grid-area: footer;
+            background-color: #c82840;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #c82840;
+            grid-area: header;
+        }
+
+        .header div {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .sale {
+
+            background-color: #ffe8ec;
+            grid-area: sale;
+        }
+
+        .sale-scroll  {
+            display: flex;
+            align-items: center;
+        }
+
+        .sale-scroll h3 {
+            font-size: 16px;
+            color: #c82840;
+        }
+
+        .sale-scroll img {
+            float: top;
+            height: 36px;
+            margin-right: 10px;
+        }
+
+        .right-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .right-header a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: normal;
+        }
+
+        .right-header img {
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">Amrita Sales</div>
+            <div class="right-header">
+                <a href="#">Orders</a>
+                <a href="#">Cart (0)</a>
+                <img src="https://avatar.vercel.sh/amrita" height="36px" alt="">
+            </div>
+        </div>
+        <div class="sale">
+            <marquee behavior="scroll" direction="left">
+                <div class="sale-scroll">
+                <img src="sale.gif" alt="">
+                        <h3>75% off on all electronics | 50% off on all clothing | 30% off on all home goods | Buy 1 get 1 free on all books</h3>
+                <img src="sale.gif" alt="" style="margin-left: 10px;">
+                </div>
+            </marquee>
+        </div>
+        <div class="products">
+            <iframe src="home.html" name="product-frame" id="product-frame"></iframe>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>Filter By Categories</h3>
+            </div>
+            <div class="sidebar-content">
+                <a href="home.html" target="product-frame">> All</a>
+                <a href="electronics.html" target="product-frame">> Electronics</a>
+                <a href="clothing.html" target="product-frame">> Clothing</a>
+                <a href="goods.html" target="product-frame">> Home Goods</a>
+                <a href="books.html" target="product-frame">> Books</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © 2026 Amrita Sales. All rights reserved.</p>
+            <p>CSE25044 - Namish Pande</p>
+        </div>
+    </div>
+</body>
+</html>

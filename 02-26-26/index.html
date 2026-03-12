@@ -1,0 +1,51 @@
+CSE25044 - Namish Pande
+<html>
+    <head>
+        <style>
+            .buttons {
+                display: flex;
+                gap: 10px;
+                background: #eee;
+                padding: 20px;
+                border-radius: 8px;
+            }
+            .buttons a {
+                text-decoration: none;
+                color: #333;
+                padding: 10px 20px;
+                background: #bbb;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+            .buttons a:hover {
+                background: #ddd;
+            }
+
+            iframe {
+                border: none;
+            }
+        </style>
+    </head>
+<body>
+
+    <h2>My Website</h2>
+
+    <div class="buttons" style="display: flex; gap: 10px;">
+        <a href="home.html" target="frame">
+            Home 
+        </a>
+
+        <a href="about.html" target="frame">
+            About
+        </a>
+
+        <a href="blog.html" target="frame">
+            Blog
+        </a>
+    </div>
+
+    <br><br>
+
+    <iframe name="frame" src="home.html" width="600" height="400"></iframe>
+</body>
+</html>

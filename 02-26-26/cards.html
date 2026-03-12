@@ -1,0 +1,99 @@
+CSE25044 - Namish Pande
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Helvetica, sans-serif;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            min-height: 100vh;
+        }
+        .card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .card img {
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-header h2 {
+            padding:0 10px ;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card-body p {
+            padding:0 10px ;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .card-footer button {
+            width: 100%;
+            padding: 15px;
+            background-color: #cf1140;
+            outline: none;
+            color: white;
+            border: none;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .card-footer button:hover {
+            cursor: pointer;
+            background-color: #ba113b;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-footer button:focus {
+            outline: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCoVh3OBePwpx7zK-8dMckA8EOtq-ReX1UQ&s" alt="image" class="card-image">
+            <div class="card-header"><h2>Red Sauce Pasta</h2></div>
+            <div class="card-body">
+                <p>Red Sauce Pasta is a delicious and easy pasta dish that is perfect for a quick meal. It is made with a rich and flavorful red sauce, which is made with tomatoes, garlic, and herbs.</p>
+            </div>
+            <div class="card-footer">
+                <button>Go To Recipe</button>
+            </div>
+        </div>
+         <div class="card">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*" alt="image" class="card-image">
+            <div class="card-header"><h2>Margherita Pizza</h2></div>
+            <div class="card-body">
+                <p>Margherita Pizza is a delicious and easy pizza dish that is perfect for a quick meal. It is made with a rich and flavorful red sauce, which is made with tomatoes, garlic, and herbs.</p>
+            </div>
+            <div class="card-footer">
+                <button>Go To Recipe</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.bonappetit.com/photos/656f48d75b552734225041ba/1:1/w_2560%2Cc_limit/20231120-WEB-Lasanga-6422.jpg" alt="" class="card-image">
+            <div class="card-header"><h2>Lasagna</h2></div>
+            <div class="card-body">
+                <p>Lasagna is a delicious and easy lasagna dish that is perfect for a quick meal. It is made with a rich and flavorful red sauce, which is made with tomatoes, garlic, and herbs.</p>
+            </div>
+            <div class="card-footer">
+                <button>Go To Recipe</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

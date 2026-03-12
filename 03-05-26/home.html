@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <style>
+        * {
+            padding: 0;
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(250, 247, 247);
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            padding: 15px;
+            height: 100vh;
+        }
+        .product-card {
+            background-color: #f0f0f0;
+            display: flex;
+        }
+        .product-card img.product-image {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .product-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .product-description {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #666666;
+        }
+        .product-below {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .add-to-card {
+            background-color: #c82840;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .add-to-card:hover {
+            background-color: #a02033;
+        }
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .user-review {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #a81d32;
+        }
+        .user-review-stars {
+            display: flex;
+            color: #f5c518;
+        }
+        .user-review-stars img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71Ve8+RsD8L._AC_UF1000,1000_QL80_.jpg" alt="Little Prince" class="product-image">
+            <div class="product-info">
+                <div class="product-top">
+                    <h3 class="product-name">Little Prince</h3>
+                    <p class="product-description">A timeless classic about a young prince who travels from planet to planet, learning about love, loss, and what truly matters in life.</p>
+                    <div class="user-review">
+                        <div class="user-review-stars">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                        </div>
+                        <p class="user-review-count">5.0 (214)</p>
+                    </div>
+                </div>
+                <div class="product-below">
+                    <p class="price">₹1,000</p>
+                    <button class="add-to-card">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://placehold.co/300x300?text=T-Shirt" alt="T-Shirt" class="product-image">
+            <div class="product-info">
+                <div class="product-top">
+                    <h3 class="product-name">T-Shirt</h3>
+                    <p class="product-description">A comfortable and stylish t-shirt for everyday wear. Made of 100% cotton, breathable fabric with a relaxed fit.</p>
+                    <div class="user-review">
+                        <div class="user-review-stars">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star-half.svg" alt="">
+                        </div>
+                        <p class="user-review-count">4.5 (83)</p>
+                    </div>
+                </div>
+                <div class="product-below">
+                    <p class="price">₹1,000</p>
+                    <button class="add-to-card">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://placehold.co/300x300?text=Laptop" alt="Laptop" class="product-image">
+            <div class="product-info">
+                <div class="product-top">
+                    <h3 class="product-name">Laptop</h3>
+                    <p class="product-description">High-performance laptop with a 15.6" Full HD display, 16GB RAM, and 512GB SSD. Ideal for work and entertainment.</p>
+                    <div class="user-review">
+                        <div class="user-review-stars">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star-half.svg" alt="">
+                        </div>
+                        <p class="user-review-count">4.3 (156)</p>
+                    </div>
+                </div>
+                <div class="product-below">
+                    <p class="price">₹50,000</p>
+                    <button class="add-to-card">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://placehold.co/300x300?text=Ceramic+Set" alt="Ceramic Dinner Set" class="product-image">
+            <div class="product-info">
+                <div class="product-top">
+                    <h3 class="product-name">Ceramic Dinner Set</h3>
+                    <p class="product-description">Elegant 24-piece ceramic dinner set with hand-painted floral patterns. Microwave and dishwasher safe for daily use.</p>
+                    <div class="user-review">
+                        <div class="user-review-stars">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                            <img src="star.svg" alt="">
+                        </div>
+                        <p class="user-review-count">4.4 (67)</p>
+                    </div>
+                </div>
+                <div class="product-below">
+                    <p class="price">₹2,500</p>
+                    <button class="add-to-card">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
