@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ef4444, #3b82f6);
+            animation: moveAndRotate 2s linear infinite alternate;
+        }
+
+        @keyframes moveAndRotate {
+            from {
+                transform: translateX(0) rotate(0deg);
+            }
+            to {
+                transform: translateX(320px) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
