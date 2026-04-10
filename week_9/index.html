@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js demo</title>
+</head>
+<body>
+    <script>
+        let a = 20;
+        if (a > 18) {
+            document.write("You are eligible to vote <br>");
+
+        } else if (a < 18) {
+            console.log("You are not eligible to vote");
+        }
+        else {
+            window.alert("You are eligible to vote");
+        }
+
+        document.write("<br> For Loop: <br>");
+
+        for (let i = 2; i <= 20; i+=2) {
+            document.write(i + "<br>");
+        }
+
+        document.write("<br> While Loop: <br>");
+
+        let j = 2;
+        while (j <= 20) {
+            document.write(j + "<br>");
+            j += 2;
+        }
+
+        document.write("<br> Do While Loop: <br>");
+
+        let k = 2;
+        do {
+            document.write(k + "<br>");
+            k += 2;
+        } while (k <= 20);
+
+        document.write("<br>");
+
+        // while (true) {
+        //    let inp = Number(window.prompt("Enter your attendance percentage"));
+        //    if (inp > 100 || inp < 0) {
+        //     window.alert("Invalid attendance percentage");
+        //     break;
+        //    } else if (inp >= 75) {
+        //     window.alert("You are eligible to sit in the exam");
+        //    }
+        //    else {
+        //     window.alert("You are not eligible to sit in the exam");
+        //    }
+        // }
+
+        let b = 100;
+        switch (b) {
+            case b > 90:
+                document.write("Grade A");
+                break;
+            case b > 80:
+                document.write("Grade B");
+                break;
+            case b > 70:
+                document.write("Grade C");
+                break;
+            default:
+                document.write("Grade D");
+                break;
+        }
+    </script>
+</body>
+</html>
