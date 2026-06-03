@@ -1,0 +1,12 @@
+{
+  "name": "week_12",
+  "version": "1.0.0",
+  "description": "Electron app for week 12",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^35.0.0"
+  }
+}
