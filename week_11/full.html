@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password"><br>
+        <button type="submit">Register</button>
+    </form>
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (!name) {
+                e.preventDefault();
+                alert("Name cannot be empty.");
+                return;
+            }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                e.preventDefault();
+                alert("Invalid email format.");
+                return;
+            }
+            if (password.length < 6) {
+                e.preventDefault();
+                alert("Password must be at least 6 characters.");
+                return;
+            }
+        });
+    </script>
+</body>
+</html>

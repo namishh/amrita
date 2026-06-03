@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input value="1" type="number" name="nums">
+    <input value="1" type="number" name="nums">
+    <input value="1" type="number" name="nums">
+    <button onclick="sort()">Sort</button>
+    <script>
+        function sort() {
+            let nums = []
+            document.getElementsByName("nums").forEach(v => nums.push(v.value))
+            nums.sort((a,b) => b-a)
+            alert(`${nums[0]}, ${nums[1]}, ${nums[2]}`)
+        }
+    </script>
+</body>
+</html>

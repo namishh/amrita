@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username Validation</title>
+</head>
+<body>
+    <label for="username">Username:</label>
+    <input type="text" id="username">
+    <script>
+        document.getElementById("username").addEventListener("input", function () {
+            if (this.value.length < 5) {
+                alert("Username must be at least 5 characters.");
+            }
+        });
+    </script>
+</body>
+</html>

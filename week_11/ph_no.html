@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number Validation</title>
+</head>
+<body>
+    <form id="form">
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("mobile").addEventListener("blur", function () {
+            const valid = /^\d{10}$/.test(this.value);
+            if (!valid) {
+                alert("Mobile number must be exactly 10 digits.");
+            }
+        });
+    </script>
+</body>
+</html>

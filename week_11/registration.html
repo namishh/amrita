@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form id="form">
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+        <button type="submit">Register</button>
+    </form>
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            const email = document.getElementById("email").value;
+            const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            if (!valid) {
+                e.preventDefault();
+                alert("Invalid email format.");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input value="1" type="number" name="nums">
+    <input value="1" type="number" name="nums">
+    <input value="1" type="number" name="nums">
+    <input value="1" type="number" name="nums">
+    <input value="1" type="number" name="nums">
+    <input value="1" type="number" name="nums">
+    <button onclick="grade()">Grade</button>
+    <script>
+        function grade() {
+            let m = 0
+            document.getElementsByName("number").forEach(v => {
+                m += v.value
+            })
+
+            let a = m/6
+            let g = ''
+
+            if (a < 60) {
+                g = 'F'
+            } else if (a < 70) {
+                g = 'D'
+            } else if (a < 80) {
+                g = 'C'
+            } else if (a < 90) {
+                g = 'B'
+            } else if (a <= 100) {
+                g = 'A'
+            }
+
+            document.write("Grade: ")
+            document.write(g + "\n")
+        }
+    </script>
+</body>

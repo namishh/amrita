@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input value="1" type="number" name="nums">
+    <input value="1" type="number" name="nums">
+    <input value="1" type="number" name="nums">
+    <button onclick="multiply()">Product</button>
+    <script>
+        function multiply() {
+            let buttons = document.getElementsByName("nums")
+            if (buttons[0].value * buttons[1].value < 0) {
+                alert("Product is negative")
+            } else {
+                alert("Product is positive")
+            }
+        }
+    </script>
+</body>
+</html>
